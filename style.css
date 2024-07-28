@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+main {
+  border: 1px solid black;
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+}
+
+.header {
+  height: 10vh;
+  background-color: #C4C4C4;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  margin-left: 2vw;
+  font-size: 2.5vw;
+}
+
+.areaDeMensagens {
+  width: 100%;
+  height: 50vh;
+  flex-grow: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 1vh;
+  box-sizing: border-box;
+}
+
+.espaçoDeMensagem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.input {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 1vh;
+}
+
+.inputDentro {
+  display: flex;
+  height: 100%;
+  width: 85%;
+  justify-content: space-evenly;
+  background-color: #C4C4C4;
+  border: 1px solid black;
+}
+
+#Enviar {
+  height: 20%;
+  width: 10%;
+  background-color: blue;
+  border-radius: 1vh;
+  margin-top: 1vh;
+}
+
+textarea {
+  width: 80%;
+  height: 80%;
+  resize: none;
+  margin-top: 1vh;
+}
+
+.mensagens {
+  max-width: 100%;
+  word-wrap: break-word;
+  margin-bottom: 1vh;
+}
+
+.mensagem {
+  width: 95%;
+  display: flex;
+  word-break: break-all;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
+.texto, .btnMensagem {
+  border: 1px solid black;
+  margin-top: 0.5vh;
+}
+
+.btnMensagem {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.editar,
+.excluir {
+  border: none;
+  padding: 0.5vh;
+}
+
+.editar {
+  background-color: #F6A75D;
+}
+
+.excluir {
+  background-color: #F65D5D;
+}
+
+.texto {
+  width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
